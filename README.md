@@ -2,6 +2,7 @@
 Simple Command Line Parser for C#
 
 --
+<pre><code>
 static dmCommandLineParser.Parser cmdParser2 = new dmCommandLineParser.Parser();
 
 static void InitializeParser()
@@ -35,3 +36,4 @@ static void Main(string[] args)
 
 	cmdParser2.Process(tmpArgs1);
 }
+</code></pre>
