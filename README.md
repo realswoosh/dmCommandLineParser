@@ -1,5 +1,12 @@
 # dmCommandLineParser
+
 Simple Command Line Parser for C#
+
+Another Command Line Parser say "It's simple" but not simple.
+If you want just each argument's expire function or don't want study library.
+This is you want it
+
+Example is all!!
 
 --
 <pre><code>
