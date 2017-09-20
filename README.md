@@ -16,8 +16,8 @@ class Program
 
 	static void InitializeParser()
 	{
-		var opt_test1 = new dmCommandLineParser.Option<IOptOperator>("--out", new OptOperator());
-		var opt_test2 = new dmCommandLineParser.Option<IOptOperator>("--cs",
+		var opt_test1 = new dmCommandLineParser.Option&ltIOptOperator>("--out", new OptOperator());
+		var opt_test2 = new dmCommandLineParser.Option&ltIOptOperator>("--cs",
 							new dmCommandLineParser.Operator.FuncOperator(TestAction));
 
 
