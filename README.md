@@ -20,6 +20,7 @@ class Program
 		var opt_test2 = new dmCommandLineParser.Option<IOptOperator>("--cs",
 							new dmCommandLineParser.Operator.FuncOperator(TestAction));
 
+
 		cmdParser2.Add(opt_test1);
 		cmdParser2.Add(opt_test2);
 	}
