@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace dmCommandLineParser
 {
-	public class Option<T> where T : IOptOperator
+	public class Option
 	{
 		public string ArgType { get; set; }
 		public string ArgValue { get; set; } = "";
 
-		T Opt;
+		IOptOperator Opt;
 
-		public Option(string argType, T op)
+		public Option(string argType, IOptOperator op)
 		{
 			ArgType = argType;
 			Opt = op;

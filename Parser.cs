@@ -8,9 +8,9 @@ namespace dmCommandLineParser
 {
 	public class Parser
 	{
-		List<Option<IOptOperator>> optList = new List<Option<IOptOperator>>();
+		List<Option> optList = new List<Option>();
 
-		public void Add(Option<IOptOperator> option)
+		public void Add(Option option)
 		{
 			optList.Add(option);
 		}
