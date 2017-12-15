@@ -42,9 +42,13 @@ namespace dmCommandLineParser
 
 		void Ready(string[] args)
 		{
+			List<string> tmpArgK = new List<string>();
+
 			foreach (string arg in args)
 			{
 				var split = Split(arg);
+
+				tmpArgK.Add(split[0]);
 
 				var option = optList.Find(x => x.ArgType == split[0]);
 				if (option == null)
@@ -52,6 +56,9 @@ namespace dmCommandLineParser
 
 				option.ArgValue = split[1];
 			}
+
+			var supportOptList = optList.Where(x => tmpArgK.Contains(x.ArgType)).ToList();
+			optList = supportOptList;
 		}
 	}
 }
